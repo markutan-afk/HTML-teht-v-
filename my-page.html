@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompanyX - Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f4ee;
+            display: flex;
+            justify-content: center;
+        }
+
+        .site-container {
+            width: 100%;
+            max-width: 1000px;
+            background: linear-gradient(to bottom, #bdc3c7, #e0e0e0);
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-box {
+            background-color: #7f8c8d;
+            color: white;
+            padding: 15px 30px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0 15px;
+            align-items: center;
+        }
+
+        .nav-links li a {
+            display: block;
+            padding: 10px 20px;
+            color: #333;
+            text-decoration: none;
+            font-size: 1rem;
+            border: 2px solid transparent;
+            border-radius: 4px;
+            margin: 0 5px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-links li a:hover {
+            background-color: #d5d5d5;
+        }
+
+        .active-page {
+            background-color: #f7f4ee !important;
+            border: 2px solid #000000 !important;
+            font-weight: bold;
+        }
+
+        .hero-section {
+            width: 100%;
+            text-align: center;
+            padding: 60px 0 20px 0;
+            position: relative;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 250px;
+            background-color: rgba(0, 0, 0, 0.04);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            color: #222;
+            margin: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .image-placeholder {
+            width: 85%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        .content-text {
+            width: 75%;
+            text-align: center;
+            color: #333;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            padding-bottom: 50px;
+        }
+
+        .logo-box {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            background: transparent;
+            height: 100%;
+        }
+
+        .logo-img {
+            height: 80px;
+            width: auto;  
+            display: block;
+            object-fit: cover;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Calibri Light", Calibri, "Segoe UI", sans-serif; /* Muuttaa fontin */
+            background-color: #f7f4ee;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="site-container">
+        <nav class="navbar">
+            <div class="logo-box">
+                <img src="logo.png" alt="CompanyX Logo" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="my-page.html" class="active-page">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <header class="hero-section">
+            <h1>CoolTanks</h1>
+        </header>
+
+        <img src="Tonk.jpeg" alt="Etusivun kuva" class="image-placeholder">
+
+        <main class="content-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis labore atque iure perferendis, ut quidem distinctio suscipit, voluptatibus aperiam repudiandae aspernatur, nostrum debitis. Ad molestiae earum voluptatum deserunt doloribus obcaecati?
+        </main>
+    </div>
+
+</body>
+</html>

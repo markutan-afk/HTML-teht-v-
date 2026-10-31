@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompanyX - Contact</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f4ee;
+            display: flex;
+            justify-content: center;
+        }
+
+        .site-container {
+            width: 100%;
+            max-width: 1000px;
+            background: linear-gradient(to bottom, #bdc3c7, #e0e0e0);
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .site-container::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-image: 
+                radial-gradient(circle at 20% 40%, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0.04) 30%, transparent 30%),
+                radial-gradient(circle at 30% 60%, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0.03) 40%, transparent 40%),
+                radial-gradient(circle at 80% 80%, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.05) 25%, transparent 25%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo-box {
+            background-color: #7f8c8d;
+            color: white;
+            padding: 15px 30px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0 15px;
+            align-items: center;
+        }
+
+        .nav-links li a {
+            display: block;
+            padding: 10px 20px;
+            color: #333;
+            text-decoration: none;
+            font-size: 1rem;
+            border: 2px solid transparent;
+            border-radius: 4px;
+            margin: 0 5px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-links li a:hover {
+            background-color: #d5d5d5;
+        }
+
+        .active-page {
+            background-color: #f7f4ee !important;
+            border: 2px solid #000000 !important;
+            font-weight: bold;
+        }
+
+        .contact-main {
+            width: 85%;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            z-index: 5;
+            gap: 40px;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-info h1 {
+            font-size: 2.5rem;
+            color: #111;
+            margin: 0 0 30px 0;
+            font-weight: bold;
+        }
+
+        .details {
+            font-size: 1.05rem;
+            line-height: 1.4;
+            color: #222;
+            font-style: italic;
+        }
+
+        .details p {
+            margin: 0 0 15px 0;
+        }
+
+        .map-placeholder {
+            width: 500px;
+            height: 350px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-top: 30px;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .contact-main {
+                flex-direction: column;
+                align-items: center;
+            }
+            .map-placeholder {
+                width: 100%;
+                height: 250px;
+            }
+        }
+
+        .logo-box {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            background: transparent;
+            height: 100%;
+        }
+
+        .logo-img {
+            height: 80px;
+            width: auto;  
+            display: block;
+            object-fit: cover;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Calibri Light", Calibri, "Segoe UI", sans-serif; /* Muuttaa fontin */
+            background-color: #f7f4ee;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="site-container">
+        <nav class="navbar">
+            <div class="logo-box">
+                <img src="logo.png" alt="CompanyX Logo" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="my-page.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html" class="active-page">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="contact-main">
+            <section class="contact-info">
+                <h1>Contact us</h1>
+                <div class="details">
+                    <p>Visit us at:<br>
+                    CoolTanks<br>
+                    Karaportti 2<br>
+                    02340 ESPOO<br>
+                    Finland</p>
+                    
+                    <p>Email: info@metropolia.fi<br>
+                    Phone: +358 (0)401231233</p>
+                </div>
+            </section>
+
+            <img src="Näyttökuva 2026-10-31 211455.png" alt="Kartta" class="map-placeholder" style="object-fit: cover;">
+        </main>
+    </div>
+
+</body>
+</html>
